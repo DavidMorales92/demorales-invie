@@ -1,0 +1,226 @@
+body{
+	margin: 0 auto;
+}
+
+.container{
+	margin: 0 auto;
+	width: 80%;
+	font-family: 'Allerta', sans-serif;
+	position: relative;
+}
+.titulo{
+	font-size: 70px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 70px;
+	margin-bottom: 0;
+}
+
+.titulo span{
+	text-decoration: underline;
+}
+
+.tittle-a{
+	font-size: 24px;
+	margin-top: 0;
+	font-family: 'Allerta', sans-serif;
+}
+
+.tittle-b{
+	font-size: 50px;
+	margin-bottom: 20px;
+	font-family: 'Allerta', sans-serif;
+}
+
+.portada button{
+	margin-bottom: 70px;
+}
+
+.menu{
+	font-size: 24px;
+	font-family: 'Allerta', sans-serif;
+	position: absolute;
+	right: 0;
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.guitarras{
+	color: #1F313C;
+	border-radius: 8px;
+}
+
+.guitarras h2{
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.button, button{
+	border-radius: 12px;
+	background: #fd324e;
+	color: white;
+	padding: 7px 12px;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+}
+
+.portada{
+	background-image: url("../images/background.png");
+	background-size: cover;
+	color: white;
+	padding: 20px;
+	height: 450px;
+}
+
+.logotipo{
+	margin: 0;
+}
+
+.logotipo, .menu, .menuli {
+	display: inline-block;
+}
+
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.guitarra{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.guitarra ol{
+	padding: 0;
+}
+
+.contenedor-guitarra-a{
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-b{
+	margin-left: 370px;
+	padding-left: 20px;
+}
+
+.derecha{
+	float: right;
+	position: relative;
+	top: -127px;
+}
+
+.izquierda{
+	float: left;
+	position: relative;
+	top: 14px;
+    right: 85px;
+}
+
+footer{
+	background-color: #273b47;
+	padding: 0 100px;
+}
+
+.contacto{
+	width: 300px;
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.col2{
+	margin-top: .30px;
+}
+
+.contacto a{	
+	color: white;
+	text-decoration: none;
+	margin: 0 10px 0 0;
+}
+.contacto img{
+	margin-bottom: -10px; 
+}
+
+.contacto strong{
+	display: block;	
+}
+
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.formulario{
+	color: white;
+	display: flex;
+	width: 400px;
+	margin-top: -50px;
+	padding: 50px 10px;
+}
+
+.col1{
+	margin-right: 15px;
+}
+.col2{
+	align-items: flex-start;
+}
+
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+}
+
+.intereses label{
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses{
+	margin-bottom: 5px;
+}
+
+.sexo{
+	margin-top: 10px;
+}
+
+table{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+th{
+	background: #273b47;
+	color: white;
+	padding: 15px 0 15px 20px;
+	text-align: left;
+}
+
+td{
+	padding: 20px;
+}
+
+table, td, th{
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+input:focus, textarea:focus{
+	background: lightgray;
+}
+
+.menu li:before{
+	content: "⌕";
+	font-size: 25px;
+	line-height: 20px;
+	color: white;
+}
+

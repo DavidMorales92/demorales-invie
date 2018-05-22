@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 </head>
 
 <body>
@@ -15,7 +16,8 @@
 				<figure class="logotipo">
 					<img src="images/invie.png" width="186" height="60"><!-- Banner -->
 				</figure>
-				<nav class="menu">
+				<span class="burguer-button icon-menu" id="burguer-button"></span>
+				<nav class="menu" id="menu">
 					<ul class="menuli">
 						<li> <a href="index.html">Home</a> </li>
 						<li> <a href="#guitarras">Guitarras</a> </li>
@@ -29,23 +31,23 @@
 		</div>
 	</section>
 
-	<div class="container">
+	
 	<section id="guitarras" class="guitarras"> <!-- Guitarras -->
-		<h2>Nuestras Guitarras</h2>		
-		<article class="guitarra"><!-- Guitarra1 -->
-			<img src="images/invie-acustica.png" alt="Guitarra acustica" width="350" class="derecha">
-			<div class="contenedor-guitarra-a">
-			<h3 class="tittle-b">Invie Acustica</h3>
-				<ol>
-					<li>Estilo vintage</li>
-					<li>Madera pura</li>
-					<li>Incluye estuche invisible de aluminio</li>
-				</ol>
-			</div>
+		<div class="container">
+			<h2>Nuestras Guitarras</h2>		
+			<article class="guitarra"><!-- Guitarra1 -->
+				<img src="images/invie-acustica.png" alt="Guitarra acustica" width="350" class="derecha" />
+				<div class="contenedor-guitarra-a">
+				<h3 class="tittle-b">Invie Acustica</h3>
+					<ol>
+						<li>Estilo vintage</li>
+						<li>Madera pura</li>
+						<li>Incluye estuche invisible de aluminio</li>
+					</ol>
+				</div>
 		</article>
-
 		<article class="guitarra"><!-- Guitarra2 -->
-			<img src="images/invie-classic.png" alt="Guitarra clasica" width="450" class="izquierda">
+			<img src="images/invie-classic.png" alt="Guitarra clasica" width="450" class="izquierda" />
 			<div class="contenedor-guitarra-b">
 				<h3 class="tittle-b">Invie Classic</h3>
 				<ol>
@@ -54,50 +56,74 @@
 					<li>Inicia tu camino como Rockstar</li>
 				</ol>
 			</div>	
-		</article>		
+		</article>	
+		</div>	
 	</section>
-	</div>
+	
 
 	<footer>
 		<div class="container">
+		<div class="contenedor">
+			
+		<form class="formulario" action="">
+			
 			<div class="contacto">
 				<img src="images/invie-white.png" alt="Logo">
 				<a href="tel:+573192594536"><strong>Teléfono: </strong><span>319 259 4536</span></a>
 				<a href="mailto:demorales@invie.com"><strong>Email: </strong><span>demorales@invie.com</span></a>
 			</div>
 
-			<form class="formulario" action="">
 			<div class="col1">			
 				<label for="nombre">Nombre</label>
-				<input type="text" id="nombre" required name="nombre" />
+				<input type="text" id="nombre" required name="nombre" /><br>
 				<label for="email">Email</label>
 				<input type="email" id="email"  required name="email">		
 
 			<div class="sexo">
+				<fieldset >
+				<legend>Género</legend>
 				<label for="mujer"><input type="radio" id="mujer" checked name="sexo" value="Mujer" />Mujer</label>
 				<label for="hombre"><input type="radio" id="hombre" name="sexo" value="Hombre" />Hombre</label>
+				</fieldset>
 			</div>
 
 			<div class="intereses">
+				<fieldset>
+				<legend>Intereses</legend>
 				<label for=""><input type="checkbox" id="cotizacion" checked name="cotizacion" value="cotizacion">Cotización</label>
 				<label for=""><input type="checkbox" id="reclamos" name="reclamos" value="reclamos">Reclamos</label>
 				<label for=""><input type="checkbox" id="comentarios" name="comentarios" value="comentarios">Comentarios</label>
 				<label for=""><input type="checkbox" id="otros" name="otros" value="otros">Otros</label>
+				</fieldset>
 			</div>
 			</div>
 
 			<div class="col2">
-					<label for="comentarios">Comentarios
-						<textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-					</label>
-					<input class="button" type="submit" value="Enviar">
+				<label for="comentarios">Comentarios
+				<textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+				</label>
+				<input class="button" type="submit" value="Enviar">
 			</div>
-			</form>
+		</form>
+		</div>	
 		</div>
 	</footer>
 
+<script>
+
+	var $burguerButton = document.getElementById("burguer-button");
+    var $menu = document.getElementById("menu");
+    $burguerButton.addEventListener('touchstart', toggleMenu);
+    
+    function toggleMenu(){
+    $menu.classList.toggle('active')
+    };
+
+</script>
 
 
-	
 </body>
 </html>
+
+
+
